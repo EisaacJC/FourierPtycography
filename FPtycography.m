@@ -7,8 +7,8 @@
 % acuerdo a las dimensiones del código.
 
 %%Fotos originales
-sucio=imread('sucio.png');
-flor=imread('flor-azul.png');
+sucio=imread('imagenes/sucio.png');
+flor=imread('imagenes/flor-azul.png');
 imshow(sucio);
 %% 
 
@@ -17,9 +17,9 @@ imshow(flor);
 %% Simulación del objeto complejo  
 
 %objectAmplitud=double(imread('cameraman.tif')); %CARGA UNA IMAGEN 
-objectAmplitud=double(imread('sucio.tiff')); %CARGA UNA IMAGEN 
+objectAmplitud=double(imread('imagenes/sucio.tiff')); %CARGA UNA IMAGEN 
 %objectAmplitud=pi*imresize(phase,[256 256])./max(max(objectAmplitud));
-phase=double(imread('flor-azul.tiff')); %CARGA OTRA IMAGEN
+phase=double(imread('imagenes/flor-azul.tiff')); %CARGA OTRA IMAGEN
 %phase=double(imread('city.jpg')); 
 phase=pi*imresize(phase,[256 256])./max(max(phase)); %HACE DE LAS MISMAS DIMENSIONES ALA SEGUNDA IMAGEN
 object=objectAmplitud.*exp(1i.* phase); %CREA EL OBJETO QUE ES LA AMPLITUD POR UNA EXPONENCIAL POR UNA FACE
